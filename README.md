@@ -36,12 +36,12 @@ forEach() method returns an undefined value.
 map(currentElement, IndexOfElement, Array)
 
 **6.	Reduce method default parameters**\
-reduce(accumulator, currentElement, currentIndex, Array) //call back function
-Is useful to get the sum, average, mean, deviation of the elements of a given array.
-reduce() method as call back function has an initial value at the last of the expression.
+reduce(accumulator, currentElement, currentIndex, Array) //call back function\
+Is useful to get the sum, average, mean, deviation of the elements of a given array.\
+reduce() method as call back function has an initial value at the last of the expression.\
 Ex: reduce(accum, currEle, Index, arr), initial value)
 
-**7.	Difference between getElementById and querySelector.**\
+**7.	Difference between getElementById() and querySelector().**\
 getElementById returns a reference to the element by its ID and if the ID is not specified in the document then it returns null.
 querySelector returns the first element within the document that matches the specified group of selectors, or null if no matches is found. It can also return all three class, id, element.
 
@@ -97,8 +97,8 @@ let name2 = myArrray[1];
 let name3 = myArray[2];
 ```
 ```
-//but with the help of array destructuring
-let [name1, name2, name3] = myArray;		          //saves time, makes work easy
+//but with the help of array destructuring, itsaves time, makes work easy
+let [name1, name2, name3] = myArray;		         
 ```
 
 **Object destructuring**
@@ -113,9 +113,9 @@ let age = myProfile.myAge;
 console.log(name);
 ```
 ```
-//but with object destrcturing
+//but with object destrcturing, it makes work easy and is time effective
 let [myName, myAge, myJob, myDegree=’Masters’] = myProfile;
-console.log(myName);                                                //makes work easy and is time effective
+console.log(myName);                                    
 ```
 
 e.	**Object properties**\
@@ -126,7 +126,7 @@ let age = 22;
 
 const myPro = {name, age};	                        //no need to write the value if it is same as key
 
-console.log(name);		                              //feels similar like object destructuring
+console.log(name);		                        //feels similar like object destructuring
 //console: Sam
 ```
 ```
@@ -145,7 +145,7 @@ console.log(myPro);
 let name = 'Sam';
 const myPro = {
     [name]: 'Suup',	                                //with [variable name] the object receives the value of global scope
-    26: 'is my age'		                              //[20+6]
+    26: 'is my age'		                        //[20+6]
 }
 
 console.log(myPro);	
@@ -324,5 +324,5 @@ console.log(num);
 let newNum = 9007199254740991n + 15n;
 console.log(newNum);                    //console: 9007199254741006n
 
-console.log(typeof(newNum));    //console: bigint
+console.log(typeof(newNum));   	        //console: bigint
 ```
