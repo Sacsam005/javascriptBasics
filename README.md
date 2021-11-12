@@ -152,7 +152,7 @@ console.log(myPro);
 //console: { '26': 'is my age', Sam: 'Suup' }
 ```
 
-f.	**Arrow function**
+f.	**Arrow function**\
 Use of fat arrow symbol(“=>”) to refer to a function expression make things easier. But key difference between fat arrow function and traditional function is that we cannot call the function prior to the function expression while using the fat arrow expression. While in a traditional function I can call the function to console before or after the function expression, that would not matter. However, in most cases we call the function after the end of the expression to ease the debugging process and prevent future possible error. 
 But with arrow function we MUST call the function after the function expression. So, primarily the main advantage of using the array function is to improve the readability of the function and save time as it shortens the code.
 Note: Cannot use “this.” keyword as argument
@@ -170,7 +170,7 @@ const sum = (a,b) => `result=${a+b}`;
 console.log(sum(3,2));
 ```
 
-h.	**Spread operators**\
+h.	**Spread operators**
 ```
 const colors = ['red', 'blue', 'green'];
 const myColors = ['red', 'blue', 'green', 'pink', 'yellow'];
@@ -187,7 +187,7 @@ console.log(myFavColor);
 #### ECMAscript 2016 ES7
 ------------------------
 
-**Array.prototype.includes**\
+**Array.prototype.includes**
 ```
 //array includes
 const colors = ['red', 'blue', 'purple'];
@@ -197,7 +197,7 @@ const isPresent = colors.includes('red');
 console.log(isPresent);
 ```
 
-**Exponentiation Operator**\
+**Exponentiation Operator**
 ```
 console.log(Math.pow(2,3));
 ```
