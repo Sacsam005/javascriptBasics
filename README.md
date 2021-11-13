@@ -232,11 +232,29 @@ console.log(2**3);
 
 #### ECMAscript 2017 ES8
 -------------------------
- 
-Async
-Await
+**Async and Await**\
+An async function is a function declared with the async keyword, and the await keyword is permitted within them.
+```js
+function resolveAfter2Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log('calling');
+  const result = await resolveAfter2Seconds();
+  console.log(result);
+  // expected output: "resolved"
+}
+
+asyncCall();
+```
 
 **String padding**
+
 padStart(), padEnd() are methods used to get the space before or after the string values in console…user can define the amount of space as required
 
 ```js
